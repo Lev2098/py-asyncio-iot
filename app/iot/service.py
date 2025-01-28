@@ -11,6 +11,7 @@ def generate_id(length: int = 8) -> str:
 
 
 class Device(Protocol):
+
     async def connect(self) -> None:
         ...
 

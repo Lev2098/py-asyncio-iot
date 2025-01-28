@@ -17,7 +17,11 @@ class HueLightDevice:
         await asyncio.sleep(TIME_TO_SLEEP)
         print("Hue Light disconnected.")
 
-    async def send_message(self, message_type: MessageType, data: str = "") -> None:
+    async def send_message(
+            self,
+            message_type: MessageType,
+            data: str = ""
+    ) -> None:
         print(
             f"Hue Light handling message of type {message_type.name} with data [{data}]."
         )
@@ -37,7 +41,11 @@ class SmartSpeakerDevice:
         await asyncio.sleep(TIME_TO_SLEEP)
         print("Smart Speaker disconnected.")
 
-    async def send_message(self, message_type: MessageType, data: str = "") -> None:
+    async def send_message(
+            self,
+            message_type: MessageType,
+            data: str = ""
+    ) -> None:
         print(
             f"Smart Speaker handling message of type {message_type.name} with data [{data}]."
         )
@@ -57,7 +65,11 @@ class SmartToiletDevice:
         await asyncio.sleep(TIME_TO_SLEEP)
         print("Smart Toilet disconnected.")
 
-    async def send_message(self, message_type: MessageType, data: str = "") -> None:
+    async def send_message(
+            self,
+            message_type: MessageType,
+            data: str = ""
+    ) -> None:
         print(
             f"Smart Toilet handling message of type {message_type.name} with data [{data}]."
         )
